@@ -1,0 +1,323 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Style the body */
+  body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #303131;
+  }
+
+  /* Style the top navigation bar */
+  .navbar {
+    display: flex;
+    background-color: #333;
+    position: sticky;
+    padding: 13px;
+    top: 0;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    z-index: 1000;
+  }
+
+
+  /* Style the navigation bar links */
+  .navbar a {
+    color: white;
+    padding: 12px 18px;
+    margin: 0 10px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+  }
+  
+   /* Change color on hover */
+   .navbar a:hover {
+    background-color: #ffffff;
+    color: #111;
+    transform: scale(1.05);
+  }
+  
+
+  /* Note */
+  .note h4{
+    background: rgb(255, 253, 208);
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  /* Home */
+  .home {
+    
+    padding: 100px;
+    min-height: 100vh;
+    background-color: #303131;
+    color: white;
+  }
+  
+  .home-content{
+    text-align: left;   
+    margin-top: 15%;
+    padding-left: 1.5rem;
+    border-left: 5px solid white;
+  }
+  .home-content h1{
+    font-size: 60px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .home-content p {
+    max-width: 400px;
+    margin: 5px;
+  }
+
+  .home-content button {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    height: 50px;
+    transition: all 0.3s;
+    font-weight: 600;
+  }
+
+  .home-content button:hover {
+    background-color: #ffffff;
+    color: #111;
+    
+  }
+
+  
+  /* Column container */
+  .row {  
+    display: flex;
+    gap: 20px;
+    
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    flex: 30%;
+    color: white;
+    background-color: rgba(17, 16, 16, 0.6);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 5%;
+    
+  }
+
+  .my-img img{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .side h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .side p {
+    text-align: center;
+    margin: 0px;
+  }
+
+  .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 10px;
+    gap: 10px;
+
+  }
+
+  .cell img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+  }
+
+  .cells .cell:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transform: scale(1.08);
+    transition: transform 0.3s ;
+  }
+  
+
+  /* Main column */
+  .main {
+    flex: 70%;
+    color: white;
+    background-color: rgba(17, 16, 16, 0.6);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 5%;
+  }
+
+
+  .container{
+    display: flex;
+    justify-content: center;
+    
+    
+  }
+
+  .card{
+    background-color: rgba(70, 62, 70, 0.150);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    width: 270px;
+    height: 350px;
+    margin: 10px;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .card:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ;
+    
+  }
+
+  .card-image img{
+    width: 100%;
+    padding: 30px 10px;
+    height: 200px;
+    background-size: cover;
+  }
+  .card h3{
+    text-align: center;
+    margin: 0px 20px;
+    padding: 10px 0px;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+  }
+
+  .card p {
+    text-align: center;
+    font-size: smaller;
+  }
+  
+  
+  .loc-img img {
+    width: 100%;
+    height: 480px;
+    border-radius: 3px;
+  }
+  
+  .loc-details{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    align-items: center;
+    gap: 5px;
+
+  }
+  .loc-details img {
+    width: 30px;
+    height: 30px;
+  }
+  /* Footer */
+  .footer {
+    background-color: #111;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    
+}
+
+.footer-logo h1 {
+    font-size: 30px;
+    margin: 0;
+    color: white;
+    font-weight: 800; 
+    padding: 20px;
+}
+
+
+
+  .footer hr {
+    border: 0;
+    border-top: 1px solid #555;
+    margin: 0px 0 40px 0;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .social-icons {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    color: #ccc;
+    margin: 0 8px;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: white;
+  }
+  
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+
+    .header h1,p{
+        left: 0;
+    }
+
+    .container{
+      flex-wrap: wrap;
+    }
+  }
